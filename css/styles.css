@@ -59,16 +59,21 @@ video.bg-video {
 }
 
 .logo-img {
-  max-width: 900px; /* Tamaño máximo del logo en pantallas grandes */
+  max-width: 800px; /* Tamaño máximo del logo en pantallas grandes */
   height: auto; /* Mantiene la proporción */
 }
 
 
 @media (max-width: 767px) {
+
+  .special-row {
+    margin-left: 3px;
+  }
+
   .logo-img {
       max-width: 450px; /* Tamaño ajustado en dispositivos pequeños */
       padding: 0; /* Elimina el padding en dispositivos pequeños si es necesario */
-      margin: 0 auto; /* Centra la imagen */
+      margin-right: 16px auto; /* Centra la imagen */
   }
 }
 
@@ -107,4 +112,78 @@ video.bg-video {
   border-radius: 100rem;
 }
 
+/* Ajustes solo para dispositivos tablet (iPad Mini, iPad Air, y iPad Pro) */
+/* Ajustes solo para dispositivos tablet (iPad Mini, iPad Air, y iPad Pro) */
+@media (min-width: 768px) and (max-width: 1366px) {
 
+  /* Eliminar completamente la línea blanca para tablets */
+  .border-right-white {
+      border-right: none !important;
+      display: none !important;
+  }
+
+  /* Centrar todo el contenido en columna */
+  .special-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      overflow: visible;
+  }
+
+  /* Centrar y ajustar el texto "WE ARE COMING SOON!" */
+  .special-border {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .special-border h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin: 10px 0;
+  }
+
+  /* Contenedor del texto descriptivo */
+  .col-12.col-md-7 {
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .col-12.col-md-7 h1 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin: 20px 0;
+      color: #ffffff;
+  }
+
+  /* Botón "Hablemos" centrado */
+  .ellipse-bg {
+      display: inline-block;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+  }
+
+  /* Íconos de redes sociales centrados */
+  .d-flex.justify-content-center {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  .icono-redes {
+      font-size: 2rem;
+      margin: 0 10px;
+      color: #ffffff;
+  }
+}
