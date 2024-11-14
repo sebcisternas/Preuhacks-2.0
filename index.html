@@ -28,7 +28,7 @@
         <div class="container-fluid  ">
            <div class="row">
           
-                <div class="col-12">
+                <div class="col-12 logo-container">
                     <img src="assets/img/logo_green.png" alt="Logo" class=" logo-img  m-md-4 p-5">
                 </div>
                 <div class="row align-items-center special-row" >
@@ -43,25 +43,43 @@
                         <h1 class="text-uppercase text-white text-center" style="font-size: 2.5rem; font-family: 'Figtree', sans-serif; font-weight: 800; line-height: 1.2;">WE ARE COMING SOON!</h1>
                     </div>
                 
+
+                    <!-- Columna sin línea blanca para dispositivos tablet y algunos ipad -->
                     <div class="col-8 d-none d-md-block d-lg-none">
                         <h1 class="text-uppercase text-white text-center" style="font-size: 4rem; font-family: 'Figtree', sans-serif; font-weight: 800; line-height: 1.2;">
                             WE ARE COMING SOON!
                         </h1>
                     </div>   
 
-                    <div class="col-12 col-md-7 text-center special-2">
+                    <!-- Columna específica para iPad Pro (ancho entre 1024px y 1366px) -->
+                        <div class="col-12 d-none d-lg-block d-xl-none ">
+                            <h1 class="text-uppercase text-white text-center" style="font-size: 5rem; font-family: 'Figtree', sans-serif; font-weight: 800; line-height: 1.2;">
+                                WE ARE COMING SOON!
+                            </h1>
+                        </div>
+
+                        <!-- Columna específica para Google Nest Hub Max (1280px x 800px) -->
+                        <div class="col-12 d-none d-xl-block d-xxl-none">
+                            <h1 class="text-uppercase text-white text-center" style="font-size: 4.5rem; font-family: 'Figtree', sans-serif; font-weight: 800; line-height: 1.2;">
+                                WE ARE COMING SOON!
+                            </h1>
+                        </div>
+
+
+
+                    <<div class="col-12 col-md-7 text-center special-2">
                         <!-- Texto descriptivo -->
-                        <h1 class="text-uppercase text-white mx-5 mt-4 mb-4" style="font-size: 1.5rem; font-family: 'Figtree', sans-serif; font-weight: 500; line-height: 1.3;">
+                        <h1 class="text-uppercase text-white mx-5 mt-4 mb-4 special-description">
                             ¡Hola! Hackeamos la PAES y reinventamos la preparación con clases intensivas, innovadoras y personalizadas.<br> ¡Estudia inteligente, estudia con estilo, estudia tranqui!
                         </h1>
                         
-                        <!-- Botón y redes sociales -->
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mt-4">
+                        <!-- Contenedor para el botón y los íconos de redes sociales -->
+                        <div class="d-flex flex-column align-items-center justify-content-center mt-4 gap-3">
                             <!-- Botón "Hablemos" -->
-                            <h3 class="ellipse-bg text-dark mx-3 mb-3 mb-md-0">¡Hablemos!</h3>
+                            <h3 class="ellipse-bg text-dark mb-3">¡Hablemos!</h3>
                             
                             <!-- Íconos de redes sociales -->
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center gap-3">
                                 <a href="https://wa.me/56931997536" target="_blank" rel="noopener noreferrer" class="mx-2">
                                     <i class="fa-brands fa-whatsapp icono-redes" style="color: #ffffff;"></i>
                                 </a>
@@ -80,6 +98,7 @@
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
                 
